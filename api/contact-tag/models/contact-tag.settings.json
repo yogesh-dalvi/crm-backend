@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "contact_tags",
+  "info": {
+    "name": "Contact Tag"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "contact": {
+      "model": "contact"
+    },
+    "tags": {
+      "collection": "tag"
+    }
+  }
+}

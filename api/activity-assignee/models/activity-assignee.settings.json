@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "activity_assignees",
+  "info": {
+    "name": "Activity Assignee"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "activity": {
+      "model": "activity"
+    },
+    "contact": {
+      "type": "biginteger"
+    }
+  }
+}
