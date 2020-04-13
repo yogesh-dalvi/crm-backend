@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "contacts",
+  "info": {
+    "name": "Contact"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "biginteger"
+    },
+    "phone_other": {
+      "type": "biginteger"
+    },
+    "email": {
+      "type": "email"
+    },
+    "email_other": {
+      "type": "email"
+    },
+    "address_1": {
+      "type": "text"
+    },
+    "address_2": {
+      "type": "text"
+    },
+    "city": {
+      "type": "string"
+    },
+    "village": {
+      "model": "village"
+    },
+    "district": {
+      "model": "district"
+    },
+    "state": {
+      "model": "state"
+    },
+    "country": {
+      "model": "country"
+    },
+    "pincode": {
+      "type": "string"
+    }
+  }
+}

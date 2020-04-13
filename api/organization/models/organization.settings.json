@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "organizations",
+  "info": {
+    "name": "Organization"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "contact": {
+      "model": "contact"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

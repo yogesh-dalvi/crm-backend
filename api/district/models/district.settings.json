@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "districts",
+  "info": {
+    "name": "District"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "state": {
+      "model": "state"
+    },
+    "is_active": {
+      "type": "boolean"
+    },
+    "abbreviation": {
+      "type": "string"
+    },
+    "identifier": {
+      "type": "string"
+    }
+  }
+}

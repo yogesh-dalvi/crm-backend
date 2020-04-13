@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "states",
+  "info": {
+    "name": "State"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "is_active": {
+      "type": "boolean"
+    },
+    "abbreviation": {
+      "type": "string"
+    },
+    "identifier": {
+      "type": "string"
+    },
+    "country": {
+      "model": "country"
+    }
+  }
+}

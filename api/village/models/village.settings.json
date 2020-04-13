@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "villages",
+  "info": {
+    "name": "Village"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "district": {
+      "model": "district"
+    },
+    "is_active": {
+      "type": "boolean"
+    },
+    "abbreviation": {
+      "type": "string"
+    },
+    "identifier": {
+      "type": "string"
+    }
+  }
+}

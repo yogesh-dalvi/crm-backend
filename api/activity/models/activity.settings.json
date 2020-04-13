@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "activities",
+  "info": {
+    "name": "Activity"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "activity_type": {
+      "model": "activity-type"
+    },
+    "start_datetime": {
+      "type": "datetime"
+    },
+    "end_datetime": {
+      "type": "datetime"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}
